@@ -929,7 +929,7 @@ footer {
   /* About */
   .article__container {
     display: grid;
-    grid-template-columns: 1fr 1.25fr !important;
+    grid-template-columns: 1fr !important;
     padding: 0.5rem;
   }
   .global-content-grid {
