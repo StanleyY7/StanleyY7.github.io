@@ -25,7 +25,7 @@ As well the website needed to contain:
 ## Summary 
 I achieved the above requirements by first designing (in general) how I would like my website to "look and feel", as well as ensuring that the MVP requirements are met first and then adding on additional styling/animations once that has been completed. The main challenges I experienced working on this project were making it responsive and ensuring that it "flowed" nicely no matter which device was being used. To resolve these challenges I consulted material available online (i.e. looking up common breakpoints for devices, common screen resolutions for devices etc...) as well as looking at reference websites that were provided for the project to see how they were structured, looked and flowed.
 
-##Tech Stack
+## Tech Stack
 To further summarise, the tech stack I used for this project are:
 - HTML
 - CSS/SCSS
