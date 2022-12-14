@@ -4,10 +4,10 @@
 
 ![image](https://user-images.githubusercontent.com/119549394/207509489-d24f9110-d557-42fe-90ba-303f636ebb6d.png)
 
-#Outline
+# Outline
 The overall goal of this project was to create a functioning and responsive portfolio website (using HTML, CSS/SCSS and JS) to showcase our skills and the projects that we are working on.
 
-##MVP
+## MVP
 The main requirements for this project were:
 - The project needed to be stored/shared as a public repository on Github.
 - The website needed to be styled using SCSS.
