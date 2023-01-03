@@ -63,6 +63,7 @@ a:hover {
   .cover-text {
     font-size: 1rem;
     padding: 0rem 1rem;
+    margin-bottom: -6rem;
   }
   #cover-image {
     margin-top: -7rem;
@@ -72,22 +73,29 @@ a:hover {
     font-size: 0.9rem;
   }
 }
-@media only screen and (min-width: 281px) and (max-width: 430px) and (min-height: 741px) {
+@media only screen and (min-width: 281px) and (max-width: 482px) and (min-height: 741px) {
   .cover-heading {
     font-size: 2.75rem;
     margin-top: -2rem;
   }
   .cover-text {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     padding: 0rem 1rem;
   }
   #cover-image {
     margin-top: -7rem;
     padding: 1rem;
-    transform: scale(1.85);
+    transform: scale(2);
   }
   .contact-btn {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 699px) {
+  .header__content--grid {
+    margin-top: -7rem;
+    grid-template-columns: 1fr !important;
+    transform: scale(0.77);
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 890px) {
