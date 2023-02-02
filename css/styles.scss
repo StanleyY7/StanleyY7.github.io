@@ -61,7 +61,8 @@ nav {
 
   position: fixed;
   top: 0%;
-  background-color: $theme-color-t;
+  background-color: transparent;
+  transition: background-color 0.25s ease;
   width: 100%;
 }
 

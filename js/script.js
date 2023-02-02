@@ -3,17 +3,22 @@ const hamburger_menu = document.querySelector(
 );
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".nav-container__links a");
+const header = document.querySelector(".nav-container");
 
-function copyright() {
+window.addEventListener("scroll", () => {
+  header.style.backgroundColor = window.scrollY > 0 ? "#ffffff" : "transparent";
+});
+
+const copyright = () => {
   document.write("&copy" + new Date().getFullYear() + " Stanley Yu ");
-}
+};
 
 window.onload = copyright();
 
-function closeMenu() {
+const closeMenu = () => {
   navbar.classList.remove("open");
   document.body.classList.remove("stop-scrolling");
-}
+};
 
 hamburger_menu.addEventListener("click", () => {
   if (!navbar.classList.contains("open")) {

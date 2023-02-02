@@ -64,7 +64,8 @@ nav {
   max-width: 102rem;
   position: fixed;
   top: 0%;
-  background-color: #ffffff;
+  background-color: transparent;
+  transition: background-color 0.25s ease;
   width: 100%;
 }
 
