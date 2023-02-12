@@ -1,9 +1,13 @@
+// DOM Variables
+
 const hamburger_menu = document.querySelector(
   ".nav-container__menu--hamburger"
 );
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".nav-container__links a");
 const header = document.querySelector(".nav-container");
+
+// General Functions
 
 window.addEventListener("scroll", () => {
   header.style.backgroundColor = window.scrollY > 0 ? "#ffffff" : "transparent";
@@ -14,6 +18,8 @@ const copyright = () => {
 };
 
 window.onload = copyright();
+
+// Hamburger Menu Functions
 
 const closeMenu = () => {
   navbar.classList.remove("open");
