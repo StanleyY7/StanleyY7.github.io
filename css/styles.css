@@ -1174,8 +1174,8 @@ footer {
   }
   /* Skills */
   #skills-heading {
-    font-size: 3.5rem;
-    margin-bottom: -8.25rem;
+    font-size: 2.75rem;
+    margin-bottom: -7.75rem;
   }
 }
 @media only screen and (min-width: 1682px) and (max-width: 2175px) {
@@ -1194,8 +1194,8 @@ footer {
   }
   /* Skills */
   #skills-heading {
-    font-size: 3.75rem;
-    margin-bottom: -8.25rem;
+    font-size: 3rem;
+    margin-bottom: -7.75rem;
   }
 }
 @media only screen and (min-width: 2175px) {
@@ -1224,7 +1224,7 @@ footer {
   }
   /* Skills */
   #skills-heading {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     margin-bottom: -8.25rem;
   }
 }/*# sourceMappingURL=styles.css.map */
