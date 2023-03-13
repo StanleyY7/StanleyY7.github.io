@@ -348,6 +348,10 @@ nav.open .nav-container__links {
   background-image: url(../assets/gbooks.png);
 }
 
+#projects__img-container_img4 {
+  background-image: url(../assets/minesweeper.png);
+}
+
 .projects__img-container:hover {
   opacity: 100%;
 }
@@ -509,6 +513,9 @@ footer {
   #projects__img-container_img3 {
     background-size: 180% 100%;
   }
+  #projects__img-container_img4 {
+    background-size: 108% 100%;
+  }
   .projects__grid--col-content > h3 {
     margin-bottom: -6rem;
   }
@@ -628,6 +635,9 @@ footer {
   #projects__img-container_img3 {
     background-size: 190%;
   }
+  #projects__img-container_img4 {
+    background-size: 100% 100%;
+  }
   .projects__grid--col-content > h3 {
     margin-bottom: -6rem;
   }
@@ -741,6 +751,9 @@ footer {
   }
   #projects__img-container_img2 {
     background-size: 120% 100%;
+  }
+  #projects__img-container_img4 {
+    background-size: 108% 100%;
   }
   .projects__grid--col-content > h3 {
     margin-bottom: -6rem;
@@ -1104,6 +1117,9 @@ footer {
   #projects__img-container_img1 {
     background-size: 100% 110%;
   }
+  #projects__img-container_img4 {
+    background-size: 112% 175%;
+  }
   .projects__grid--col-content > h3 {
     margin-bottom: -7.5rem;
   }
@@ -1160,6 +1176,9 @@ footer {
   #projects__img-container_img2 {
     background-size: 120% 100%;
   }
+  #projects__img-container_img4 {
+    background-size: 112% 100%;
+  }
 }
 @media only screen and (min-width: 1536px) and (max-width: 1681px) {
   /* Header */
@@ -1192,6 +1211,10 @@ footer {
   .nav-container__links a {
     font-size: 1.5rem;
   }
+  /* Projects */
+  #projects__img-container_img4 {
+    background-size: 100% 160%;
+  }
   /* Skills */
   #skills-heading {
     font-size: 3rem;
@@ -1221,6 +1244,9 @@ footer {
   }
   #projects__img-container_img3 {
     background-position: 30% 45.5%;
+  }
+  #projects__img-container_img4 {
+    background-size: 100% 175%;
   }
   /* Skills */
   #skills-heading {
