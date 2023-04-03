@@ -2,7 +2,14 @@
 
 ### Link https://stanleyy7.github.io/
 
+#### Main Page
+
 ![image](https://user-images.githubusercontent.com/119549394/207509489-d24f9110-d557-42fe-90ba-303f636ebb6d.png)
+
+#### 404 Page
+
+![image](https://user-images.githubusercontent.com/119549394/228779432-96a50594-7757-4ff0-9142-9a1e123ba2c7.png)
+
 
 # Outline
 The overall goal of this project was to create a functioning and responsive portfolio website (using HTML, CSS/SCSS and JS) to showcase our skills and the projects that we are working on.
