@@ -1,6 +1,8 @@
 # Portfolio Project
 
-### Link https://stanleyy7.github.io/
+### Link: https://stanleyy7.github.io/
+
+#### I have also refactored this project into Angular, link: https://github.com/StanleyY7/portfolio-in-angular
 
 #### Main Page
 
