@@ -41,6 +41,11 @@ em {
     opacity: 0;
   }
 }
+#special-link {
+  background-color: #fcf258;
+  text-decoration: underline;
+}
+
 /* Header */
 header {
   width: 100%;
