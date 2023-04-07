@@ -12,6 +12,7 @@
 
 ![image](https://user-images.githubusercontent.com/119549394/228779432-96a50594-7757-4ff0-9142-9a1e123ba2c7.png)
 
+<img width="250" src="https://github.com/StanleyY7/StanleyY7.github.io/actions/workflows/main.yml/badge.svg"/>
 
 # Outline
 The overall goal of this project was to create a functioning and responsive portfolio website (using HTML, CSS/SCSS and JS) to showcase our skills and the projects that we are working on.
