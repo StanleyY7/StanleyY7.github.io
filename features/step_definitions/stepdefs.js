@@ -260,6 +260,14 @@ Given("I am on the page", () => {
   `);
 });
 
+// Scenario: Global items should render
+
+Then("I should see all the icons", () => {
+  const icons = dom.window.document.querySelectorAll(".icon");
+  assert.ok(icons);
+  assert.equal(icons.length, 10);
+});
+
 // Scenario: Main should render
 
 Then("I should see the header", () => {
@@ -287,4 +295,49 @@ Then("I should see {string}", (s) => {
   ]);
   assert.ok(coverContent);
   assert.equal(coverContent.length, 3);
+});
+
+// Scenario: About section should render
+
+Then("I should see the {string}", (s) => {
+  const aboutContent = dom.window.document.querySelectorAll([
+    "#about-section",
+    ".global-content-grid",
+    ".global-content-grid-social-container",
+  ]);
+  assert.ok(aboutContent);
+  assert.equal(aboutContent.length, 3);
+});
+
+// Scenario: Projects section should render
+
+Then("I should see the {string} render", (s) => {
+  const projectsContent = dom.window.document.querySelectorAll([
+    "#projects-section",
+    "#projects-heading",
+    ".projects__grid",
+    ".projects__grid--col-content",
+  ]);
+  assert.ok(projectsContent);
+  assert.equal(projectsContent.length, 7);
+});
+
+// Scenario: Skills section should render
+
+Then("I should see the {string} on the page", (s) => {
+  const skillsContent = dom.window.document.querySelectorAll([
+    "#skills-section",
+    "#skills-heading",
+    ".skills__grid",
+    ".skills-grid-img",
+  ]);
+  assert.ok(skillsContent);
+  assert.equal(skillsContent.length, 13);
+});
+
+// Scenario: Footer should render
+
+Then("I should see the footer image", () => {
+  const footerImg = dom.window.document.querySelector(".footer-img");
+  assert.ok(footerImg);
 });
