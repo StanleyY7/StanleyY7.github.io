@@ -49,6 +49,82 @@ em {
   text-decoration: underline;
 }
 
+.fade-in-left {
+  visibility: hidden;
+  transform: translateX(-100%);
+  animation-name: fade-in-left;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-left-text {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation-name: fade-in-left-text;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-left {
+  from {
+    visibility: hidden;
+    transform: translateX(-100%);
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-left-text {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  visibility: hidden;
+  transform: translateX(100%);
+  animation-name: fade-in-right;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-right-text {
+  opacity: 0;
+  transform: translateX(100%);
+  animation-name: fade-in-right-text;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-right {
+  from {
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right-text {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Header */
 header {
   width: 100%;
@@ -350,18 +426,23 @@ nav.open .nav-container__links {
 
 #projects__img-container_img1 {
   background-image: url(../assets/eshop.png);
+
+  visibility: hidden;
 }
 
 #projects__img-container_img2 {
   background-image: url(../assets/fakeos.png);
+  visibility: hidden;
 }
 
 #projects__img-container_img3 {
   background-image: url(../assets/gbooks.png);
+  visibility: hidden;
 }
 
 #projects__img-container_img4 {
   background-image: url(../assets/minesweeper.png);
+  visibility: hidden;
 }
 
 .projects__img-container:hover {
@@ -537,15 +618,19 @@ footer {
   }
   #projects__img-container_img1 {
     background-size: 130% 100%;
+    visibility: visible;
   }
   #projects__img-container_img2 {
     background-size: 120% 82%;
+    visibility: visible;
   }
   #projects__img-container_img3 {
     background-size: 180% 100%;
+    visibility: visible;
   }
   #projects__img-container_img4 {
     background-size: 108% 100%;
+    visibility: visible;
   }
 
   .projects__grid--col-content > h3 {
@@ -682,17 +767,21 @@ footer {
   }
   #projects__img-container_img1 {
     background-size: 120% 100%;
+    visibility: visible;
   }
 
   #projects__img-container_img2 {
     background-size: 120% 100%;
+    visibility: visible;
   }
 
   #projects__img-container_img3 {
     background-size: 190%;
+    visibility: visible;
   }
   #projects__img-container_img4 {
     background-size: 100% 100%;
+    visibility: visible;
   }
 
   .projects__grid--col-content > h3 {
@@ -827,14 +916,19 @@ footer {
   }
   #projects__img-container_img1 {
     background-size: 120% 100%;
+    visibility: visible;
   }
 
   #projects__img-container_img2 {
     background-size: 120% 100%;
+    visibility: visible;
   }
-
+  #projects__img-container_img3 {
+    visibility: visible;
+  }
   #projects__img-container_img4 {
     background-size: 108% 100%;
+    visibility: visible;
   }
 
   .projects__grid--col-content > h3 {
@@ -1301,6 +1395,25 @@ footer {
 }
 
 @media only screen and (min-width: 1026px) and (max-width: 1535px) {
+  /* General */
+
+  #eShop {
+    opacity: 0;
+  }
+  #gBooks {
+    opacity: 0;
+  }
+  #fakeOs {
+    opacity: 0;
+  }
+  #minesweeper {
+    opacity: 0;
+  }
+
+  .projects__grid--col-content {
+    opacity: 0;
+  }
+
   /* Header */
   .header__content .header__content--grid {
     margin-left: 6rem;
@@ -1344,6 +1457,24 @@ footer {
 }
 
 @media only screen and (min-width: 1536px) and (max-width: 1681px) {
+  /* General */
+
+  #eShop {
+    opacity: 0;
+  }
+  #gBooks {
+    opacity: 0;
+  }
+  #fakeOs {
+    opacity: 0;
+  }
+  #minesweeper {
+    opacity: 0;
+  }
+
+  .projects__grid--col-content {
+    opacity: 0;
+  }
   /* Header */
   nav {
     font-size: 1.2rem;
@@ -1364,6 +1495,24 @@ footer {
 }
 
 @media only screen and (min-width: 1682px) and (max-width: 2175px) {
+  /* General */
+
+  #eShop {
+    opacity: 0;
+  }
+  #gBooks {
+    opacity: 0;
+  }
+  #fakeOs {
+    opacity: 0;
+  }
+  #minesweeper {
+    opacity: 0;
+  }
+
+  .projects__grid--col-content {
+    opacity: 0;
+  }
   /* Header */
   nav {
     font-size: 1.3rem;
@@ -1392,6 +1541,24 @@ footer {
 }
 
 @media only screen and (min-width: 2175px) {
+  /* General */
+
+  #eShop {
+    opacity: 0;
+  }
+  #gBooks {
+    opacity: 0;
+  }
+  #fakeOs {
+    opacity: 0;
+  }
+  #minesweeper {
+    opacity: 0;
+  }
+
+  .projects__grid--col-content {
+    opacity: 0;
+  }
   /* Header */
   nav {
     font-size: 1.3rem;
