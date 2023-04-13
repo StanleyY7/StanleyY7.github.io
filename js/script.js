@@ -53,47 +53,100 @@ const minesweeperImage = document.getElementById(
   "projects__img-container_img4"
 );
 
+const observerOptions = {
+  threshold: 0.97,
+};
+
 if (window.matchMedia("(min-width:1000px)").matches) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        element.classList.add("fade-in-left-text");
+  const elementObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      element.classList.add("fade-in-left-text");
+    }
+  }, observerOptions);
 
-        element2.classList.add("fade-in-left");
-        fakeOS.classList.add("fade-in-right-text");
+  const element2Observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      element2.classList.add("fade-in-left");
+    }
+  }, observerOptions);
 
-        fakeOsImage.classList.add("fade-in-right");
-        gBooks.classList.add("fade-in-left-text");
+  const fakeOSObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      fakeOS.classList.add("fade-in-right-text");
+    }
+  }, observerOptions);
 
-        gBooksImage.classList.add("fade-in-left");
-        minesweeper.classList.add("fade-in-right-text");
+  const fakeOsImageObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      fakeOsImage.classList.add("fade-in-right");
+    }
+  }, observerOptions);
 
-        minesweeperImage.classList.add("fade-in-right");
-      }
-    },
-    { threshold: [0.5] }
-  );
+  const gBooksObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      gBooks.classList.add("fade-in-left-text");
+    }
+  }, observerOptions);
 
-  observer.observe(element);
+  const gBooksImageObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      gBooksImage.classList.add("fade-in-left");
+    }
+  }, observerOptions);
+
+  const minesweeperObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      minesweeper.classList.add("fade-in-right-text");
+    }
+  }, observerOptions);
+
+  const minesweeperImageObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      minesweeperImage.classList.add("fade-in-right");
+    }
+  }, observerOptions);
+
+  elementObserver.observe(element);
+  element2Observer.observe(element2);
+  fakeOSObserver.observe(fakeOS);
+  fakeOsImageObserver.observe(fakeOsImage);
+  gBooksObserver.observe(gBooks);
+  gBooksImageObserver.observe(gBooksImage);
+  minesweeperObserver.observe(minesweeper);
+  minesweeperImageObserver.observe(minesweeperImage);
 } else {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        element2.classList.add("fade-in-left");
-        fakeOsImage.classList.add("fade-in-right");
-        gBooksImage.classList.add("fade-in-left");
-        minesweeperImage.classList.add("fade-in-right");
-      }
-    },
-    { threshold: [0.5] }
-  );
+  const element2Observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      element2.classList.add("fade-in-left");
+    }
+  }, observerOptions);
 
+  const fakeOsImageObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      fakeOsImage.classList.add("fade-in-right");
+    }
+  }, observerOptions);
+
+  const gBooksImageObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      gBooksImage.classList.add("fade-in-left");
+    }
+  }, observerOptions);
+
+  const minesweeperImageObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      minesweeperImage.classList.add("fade-in-right");
+    }
+  }, observerOptions);
+
+  element2Observer.observe(element2);
+  fakeOsImageObserver.observe(fakeOsImage);
+  gBooksImageObserver.observe(gBooksImage);
+  minesweeperImageObserver.observe(minesweeperImage);
   if ((element2.style.opacity = "1")) {
     element.style.opacity = "1";
     fakeOS.style.opacity = "1";
     gBooks.style.opacity = "1";
     minesweeper.style.opacity = "1";
   }
-
-  observer.observe(element);
 }

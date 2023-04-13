@@ -51,24 +51,24 @@ em {
 
 .fade-in-left {
   visibility: hidden;
-  transform: translateX(-100%);
+  transform: translateX(-225%);
   animation-name: fade-in-left;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
 .fade-in-left-text {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-250%);
   animation-name: fade-in-left-text;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes fade-in-left {
   from {
     visibility: hidden;
-    transform: translateX(-100%);
+    transform: translateX(-225%);
   }
   to {
     visibility: visible;
@@ -78,7 +78,7 @@ em {
 @keyframes fade-in-left-text {
   from {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-225%);
   }
   to {
     opacity: 1;
@@ -88,24 +88,24 @@ em {
 
 .fade-in-right {
   visibility: hidden;
-  transform: translateX(100%);
+  transform: translateX(225%);
   animation-name: fade-in-right;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
 .fade-in-right-text {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(225%);
   animation-name: fade-in-right-text;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes fade-in-right {
   from {
     visibility: hidden;
-    transform: translateX(100%);
+    transform: translateX(225%);
   }
   to {
     visibility: visible;
@@ -116,7 +116,7 @@ em {
 @keyframes fade-in-right-text {
   from {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(225%);
   }
 
   to {
