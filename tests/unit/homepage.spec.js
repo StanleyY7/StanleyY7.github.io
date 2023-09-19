@@ -18,4 +18,11 @@ test.describe("homePage unit tests", () => {
     await app.homePage.contactButton.click();
     await app.homePage.verifyAboutHeading();
   });
+
+  test("about link", async () => {
+    await app.goTo();
+    await app.homePage.verifyAboutButton();
+    await app.homePage.aboutButton.click();
+    await app.homePage.verifyAboutHeading();
+  });
 });
