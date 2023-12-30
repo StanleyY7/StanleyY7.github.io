@@ -57,7 +57,7 @@ const observerOptions = {
   threshold: 0.97,
 };
 
-if (window.matchMedia("(min-width:700px)").matches) {
+if (window.matchMedia("(min-width:1000px)").matches) {
   const elementObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       element.classList.add("fade-in-left-text");
@@ -117,25 +117,25 @@ if (window.matchMedia("(min-width:700px)").matches) {
 } else {
   const element2Observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      element2.classList.add("static");
+      element2.classList.add("fade-in-left");
     }
   }, observerOptions);
 
   const fakeOsImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      fakeOsImage.classList.add("static");
+      fakeOsImage.classList.add("fade-in-right");
     }
   }, observerOptions);
 
   const gBooksImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      gBooksImage.classList.add("static");
+      gBooksImage.classList.add("fade-in-left");
     }
   }, observerOptions);
 
   const minesweeperImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      minesweeperImage.classList.add("static");
+      minesweeperImage.classList.add("fade-in-right");
     }
   }, observerOptions);
 
@@ -143,10 +143,4 @@ if (window.matchMedia("(min-width:700px)").matches) {
   fakeOsImageObserver.observe(fakeOsImage);
   gBooksImageObserver.observe(gBooksImage);
   minesweeperImageObserver.observe(minesweeperImage);
-  if ((element2.style.opacity = "1")) {
-    element.style.opacity = "1";
-    fakeOS.style.opacity = "1";
-    gBooks.style.opacity = "1";
-    minesweeper.style.opacity = "1";
-  }
 }
