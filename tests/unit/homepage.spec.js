@@ -1,6 +1,6 @@
 // @ts-check
 import { App } from "../pages/app";
-const { test, expect } = require("@playwright/test");
+const { test } = require("@playwright/test");
 
 test.describe("homePage unit tests", () => {
   let app;
