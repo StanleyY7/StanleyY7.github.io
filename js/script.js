@@ -53,11 +53,11 @@ const minesweeperImage = document.getElementById(
   "projects__img-container_img4"
 );
 
-const observerOptions = {
-  threshold: 0.97,
+let observerOptions = {
+  threshold: 0.7,
 };
 
-if (window.matchMedia("(min-width:1000px)").matches) {
+if (window.matchMedia("(min-width:650px)").matches) {
   const elementObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       element.classList.add("fade-in-left-text");
@@ -115,6 +115,9 @@ if (window.matchMedia("(min-width:1000px)").matches) {
   minesweeperObserver.observe(minesweeper);
   minesweeperImageObserver.observe(minesweeperImage);
 } else {
+  observerOptions = {
+    threshold: 0.4,
+  };
   const element2Observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       element2.classList.add("fade-in-left");
