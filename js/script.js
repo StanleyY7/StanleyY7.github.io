@@ -57,7 +57,7 @@ const observerOptions = {
   threshold: 0.97,
 };
 
-if (window.matchMedia("(min-width:1000px)").matches) {
+if (window.matchMedia("(min-width:700px)").matches) {
   const elementObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       element.classList.add("fade-in-left-text");
@@ -117,25 +117,25 @@ if (window.matchMedia("(min-width:1000px)").matches) {
 } else {
   const element2Observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      element2.classList.add("fade-in-left");
+      element2.classList.add("hidden");
     }
   }, observerOptions);
 
   const fakeOsImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      fakeOsImage.classList.add("fade-in-right");
+      fakeOsImage.classList.add("hidden");
     }
   }, observerOptions);
 
   const gBooksImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      gBooksImage.classList.add("fade-in-left");
+      gBooksImage.classList.add("hidden");
     }
   }, observerOptions);
 
   const minesweeperImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      minesweeperImage.classList.add("fade-in-right");
+      minesweeperImage.classList.add("hidden");
     }
   }, observerOptions);
 
