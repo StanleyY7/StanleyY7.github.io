@@ -54,7 +54,7 @@ const minesweeperImage = document.getElementById(
 );
 
 let observerOptions = {
-  threshold: 0.7,
+  threshold: 0.85,
 };
 
 if (window.matchMedia("(min-width:650px)").matches) {
