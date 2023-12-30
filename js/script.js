@@ -117,25 +117,25 @@ if (window.matchMedia("(min-width:700px)").matches) {
 } else {
   const element2Observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      element2.classList.add("hidden");
+      element2.classList.add("static");
     }
   }, observerOptions);
 
   const fakeOsImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      fakeOsImage.classList.add("hidden");
+      fakeOsImage.classList.add("static");
     }
   }, observerOptions);
 
   const gBooksImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      gBooksImage.classList.add("hidden");
+      gBooksImage.classList.add("static");
     }
   }, observerOptions);
 
   const minesweeperImageObserver = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
-      minesweeperImage.classList.add("hidden");
+      minesweeperImage.classList.add("static");
     }
   }, observerOptions);
 
