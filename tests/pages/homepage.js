@@ -1,4 +1,10 @@
 import { expect } from "@playwright/test";
+
+const currentYear = new Date()
+  .getUTCFullYear()
+  .toLocaleString()
+  .replace(",", "");
+
 export class HomePage {
   constructor(Page) {
     this.page = Page;
@@ -10,7 +16,7 @@ export class HomePage {
       .getByRole("link", { name: "Skills" });
     this.skillsHeading = this.page.getByRole("heading", { name: "Skills_" });
     this.skillsGrid = this.page.locator(".skills__grid");
-    this.copyright = this.page.getByText("©2023 Stanley Yu");
+    this.copyright = this.page.getByText(`©${currentYear} Stanley Yu`);
   }
 
   async verifyAboutHeading() {
